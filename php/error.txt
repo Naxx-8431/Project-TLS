@@ -1,0 +1,44 @@
+PHP Exception: FPDF error: Missing or invalid image: E:\PHP\htdocs\Project TLS\php/../uploads/pdf_login_logo_69c25718dc6cd.webp
+#0 E:\PHP\htdocs\Project TLS\fpdf\fpdf.php(495): FPDF->Error('Missing or inva...')
+#1 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(85): FPDF->Image('E:\\PHP\\htdocs\\P...', 10.0, 78.775229357798, 190.0, 139.4495412844)
+#2 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(37): PdfGenerator->addImagePage('E:\\PHP\\htdocs\\P...')
+#3 E:\PHP\htdocs\Project TLS\php\upload-handler.php(197): PdfGenerator->generateFromImages(Array, 'E:\\PHP\\htdocs\\P...')
+#4 E:\PHP\htdocs\Project TLS\php\upload-handler.php(233): processPdfConversion(Array)
+#5 {main}PHP Exception: Call to undefined function imagecreatefromwebp()
+#0 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(56): PdfGenerator->convertToPng('E:\\PHP\\htdocs\\P...')
+#1 E:\PHP\htdocs\Project TLS\php\upload-handler.php(197): PdfGenerator->generateFromImages(Array, 'E:\\PHP\\htdocs\\P...')
+#2 E:\PHP\htdocs\Project TLS\php\upload-handler.php(233): processPdfConversion(Array)
+#3 {main}PHP Error: Undefined array key 1 in E:\PHP\htdocs\Project TLS\fpdf\fpdf.php on line 781
+PHP Exception: Call to undefined function imagecreatefromwebp()
+#0 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(59): PdfGenerator->convertToPng('E:\\PHP\\htdocs\\P...')
+#1 E:\PHP\htdocs\Project TLS\php\upload-handler.php(197): PdfGenerator->generateFromImages(Array, 'E:\\PHP\\htdocs\\P...')
+#2 E:\PHP\htdocs\Project TLS\php\upload-handler.php(233): processPdfConversion(Array)
+#3 {main}PHP Exception: FPDF error: Not a PNG file: E:\PHP\htdocs\Project TLS\php/../uploads/pdf_bg_wp9528601-black-nature-4k-wallpapers_69c25f25b03f9_69c26063ba3b5.png
+#0 E:\PHP\htdocs\Project TLS\fpdf\fpdf.php(1286): FPDF->Error('Not a PNG file:...')
+#1 E:\PHP\htdocs\Project TLS\fpdf\fpdf.php(1277): FPDF->_parsepngstream(Resource id #14, 'E:\\PHP\\htdocs\\P...')
+#2 E:\PHP\htdocs\Project TLS\fpdf\fpdf.php(890): FPDF->_parsepng('E:\\PHP\\htdocs\\P...')
+#3 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(116): FPDF->Image('E:\\PHP\\htdocs\\P...', 10.0, 95.0625, 190.0, 106.875)
+#4 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(61): PdfGenerator->addImagePage('E:\\PHP\\htdocs\\P...')
+#5 E:\PHP\htdocs\Project TLS\php\upload-handler.php(207): PdfGenerator->generateFromImages(Array, 'E:\\PHP\\htdocs\\P...')
+#6 E:\PHP\htdocs\Project TLS\php\upload-handler.php(243): processPdfConversion(Array)
+#7 {main}PHP Exception: Call to undefined function imagecreatefromwebp()
+#0 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(59): PdfGenerator->convertToPng('E:\\PHP\\htdocs\\P...')
+#1 E:\PHP\htdocs\Project TLS\php\upload-handler.php(207): PdfGenerator->generateFromImages(Array, 'E:\\PHP\\htdocs\\P...')
+#2 E:\PHP\htdocs\Project TLS\php\upload-handler.php(243): processPdfConversion(Array)
+#3 {main}PHP Exception: Your server's PHP installation does not support WebP image conversion. Please upload JPG or PNG images instead.
+#0 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(60): PdfGenerator->convertToPng('E:\\PHP\\htdocs\\P...')
+#1 E:\PHP\htdocs\Project TLS\php\upload-handler.php(207): PdfGenerator->generateFromImages(Array, 'E:\\PHP\\htdocs\\P...')
+#2 E:\PHP\htdocs\Project TLS\php\upload-handler.php(243): processPdfConversion(Array)
+#3 {main}PHP Exception: Your server's PHP installation does not support WebP image conversion. Please upload JPG or PNG images instead.
+#0 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(60): PdfGenerator->convertToPng('E:\\PHP\\htdocs\\P...')
+#1 E:\PHP\htdocs\Project TLS\php\upload-handler.php(207): PdfGenerator->generateFromImages(Array, 'E:\\PHP\\htdocs\\P...')
+#2 E:\PHP\htdocs\Project TLS\php\upload-handler.php(243): processPdfConversion(Array)
+#3 {main}PHP Exception: Your server's PHP installation does not support WebP image conversion. Please upload JPG or PNG images instead.
+#0 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(60): PdfGenerator->convertToPng('E:\\PHP\\htdocs\\P...')
+#1 E:\PHP\htdocs\Project TLS\php\upload-handler.php(207): PdfGenerator->generateFromImages(Array, 'E:\\PHP\\htdocs\\P...')
+#2 E:\PHP\htdocs\Project TLS\php\upload-handler.php(243): processPdfConversion(Array)
+#3 {main}PHP Exception: Your server's PHP installation does not support WebP image conversion. Please upload JPG or PNG images instead.
+#0 E:\PHP\htdocs\Project TLS\php\PdfGenerator.php(60): PdfGenerator->convertToPng('E:\\PHP\\htdocs\\P...')
+#1 E:\PHP\htdocs\Project TLS\php\upload-handler.php(207): PdfGenerator->generateFromImages(Array, 'E:\\PHP\\htdocs\\P...')
+#2 E:\PHP\htdocs\Project TLS\php\upload-handler.php(243): processPdfConversion(Array)
+#3 {main}

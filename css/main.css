@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --md-sys-color-primary: #6750A4;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #EADDFF;
+    --md-sys-color-on-primary-container: #21005D;
+
+    --md-sys-color-secondary: #625B71;
+    --md-sys-color-on-secondary: #FFFFFF;
+    --md-sys-color-secondary-container: #E8DEF8;
+    --md-sys-color-on-secondary-container: #1D192B;
+
+    --md-sys-color-tertiary: #7D5260;
+    --md-sys-color-on-tertiary: #FFFFFF;
+    --md-sys-color-tertiary-container: #FFD8E4;
+    --md-sys-color-on-tertiary-container: #31111D;
+
+    --md-sys-color-surface: #FFFBFE;
+    --md-sys-color-on-surface: #1C1B1F;
+    --md-sys-color-surface-variant: #E7E0EC;
+    --md-sys-color-on-surface-variant: #49454F;
+
+    --md-sys-color-outline: #79747E;
+    --md-sys-color-outline-variant: #CAC4D0;
+
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+
+    --md-sys-elevation-1: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px 1px rgba(0,0,0,0.15);
+    --md-sys-elevation-2: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px 2px rgba(0,0,0,0.15);
+    --md-sys-elevation-3: 0 4px 8px 3px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.3);
+
+    --md-sys-shape-corner-small: 8px;
+    --md-sys-shape-corner-medium: 12px;
+    --md-sys-shape-corner-large: 16px;
+    --md-sys-shape-corner-extra-large: 28px;
+
+    --md-sys-motion-duration-short: 200ms;
+    --md-sys-motion-duration-medium: 400ms;
+    --md-sys-motion-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: url(../images/image1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navigation {
+    background-color: rgb(from var(--md-sys-color-surface) r g b / 0.8);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.navbar-brand {
+    color: var(--md-sys-color-on-surface) !important;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: var(--md-sys-color-on-surface-variant) !important;
+    font-weight: 500;
+    transition: color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-emphasized);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--md-sys-color-on-surface) !important;
+}
+
+.card {
+    background-color: var(--md-sys-color-surface);
+    border: none;
+    border-radius: var(--md-sys-shape-corner-extra-large);
+    padding: 16px;
+    backdrop-filter: blur(16px);
+    box-shadow: var(--md-sys-elevation-1);
+    transition: transform var(--md-sys-motion-duration-medium) var(--md-sys-motion-easing-emphasized),
+                box-shadow var(--md-sys-motion-duration-medium) var(--md-sys-motion-easing-emphasized);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: var(--md-sys-elevation-3);
+}
+
+.card-img-top img {
+    border-radius: var(--md-sys-shape-corner-large);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--md-sys-color-on-surface);
+}
+
+.card-text {
+    font-size: 0.875rem;
+    color: var(--md-sys-color-on-surface-variant);
+    line-height: 1.5;
+}
+
+.button {
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: all var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-emphasized);
+}
+
+.button:hover {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--md-sys-elevation-2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--md-sys-color-on-surface);
+    font-weight: 600;
+}
+
+p {
+    color: var(--md-sys-color-on-surface-variant);
+    line-height: 1.6;
+}
+
+.md3-surface {
+    background-color: var(--md-sys-color-surface);
+    border-radius: var(--md-sys-shape-corner-extra-large);
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+.md3-surface-tint {
+    background-color: var(--md-sys-color-primary-container);
+}
+
+.md3-filled-button {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-weight: 500;
+    border: none;
+    transition: all var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-emphasized);
+}
+
+.md3-filled-button:hover {
+    box-shadow: var(--md-sys-elevation-2);
+    transform: translateY(-2px);
+}
+
+.md3-tonal-button {
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-weight: 500;
+    border: none;
+    transition: all var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-emphasized);
+}
+
+.md3-tonal-button:hover {
+    background-color: var(--md-sys-color-secondary);
+    color: var(--md-sys-color-on-secondary);
+}
+
+.md3-outlined-button {
+    background-color: transparent;
+    color: var(--md-sys-color-primary);
+    border: 1px solid var(--md-sys-color-outline);
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-weight: 500;
+    transition: all var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-emphasized);
+}
+
+.md3-outlined-button:hover {
+    background-color: var(--md-sys-color-primary-container);
+    border-color: var(--md-sys-color-primary);
+}
+
+.upload-box {
+    border: 2px dashed var(--md-sys-color-outline-variant);
+    border-radius: var(--md-sys-shape-corner-extra-large);
+    cursor: pointer;
+    transition: all var(--md-sys-motion-duration-medium) var(--md-sys-motion-easing-emphasized);
+    background: rgba(from var(--md-sys-color-surface) r g b / 0.5);
+    backdrop-filter: blur(16px);
+}
+
+.upload-box:hover {
+    border-color: var(--md-sys-color-primary);
+    background: var(--md-sys-color-primary-container);
+    transform: scale(1.02);
+    box-shadow: var(--md-sys-elevation-2);
+}
+
+.upload-icon {
+    font-size: 4rem;
+    color: var(--md-sys-color-primary);
+}
